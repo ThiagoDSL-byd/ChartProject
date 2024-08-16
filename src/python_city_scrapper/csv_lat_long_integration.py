@@ -29,10 +29,10 @@ def add_lat_long_to_csv(json_data, csv_path, output_path):
         city_name = row["Município"].strip().lower()
         if city_name in city_coordinates:
             latitude, longitude = city_coordinates[city_name]
-            rows.append({"City": row["Município"], "Latitude": latitude, "Longitude": longitude})
+            rows.append({"city": row["Município"], "latitude": latitude, "longitude": longitude})
     
     # Create a new DataFrame from the collected rows
-    result_df = pd.DataFrame(rows, columns=["City", "Latitude", "Longitude"])
+    result_df = pd.DataFrame(rows, columns=["city", "latitude", "longitude"])
     
     # Save the result DataFrame to a new CSV file
     result_df.to_csv(output_path, sep=',', index=False, encoding='utf-8')
