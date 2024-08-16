@@ -1,0 +1,73 @@
+<html lang="en"> 
+  <head>
+    <title>Create maps with chartjs-chart-geo in Chart Js</title>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chartjs-chart-geo@4.3.1/build/index.umd.min.js"></script>
+
+    <script>
+      const url = 'https://raw.githubusercontent.com/markmarkoh/datamaps/master/src/js/data/bra.topo.json'
+      fetch(url).then((result) => result.json()).then((datapoint) => {
+        const bra = ChartGeo.topojson.feature(datapoint, datapoint.objects.bra).features;
+      
+        // base tutorial: https://www.youtube.com/watch?v=5xRVrwFNojk
+        // console.log(countries[240].properties.name)
+        // trying to do something similar to: https://codepen.io/sgratzl/pen/YzyJRvm
+        // further docs here: https://github.com/sgratzl/chartjs-chart-geo/tree/main
+
+
+        const ctx = document.getElementById('myChart').getContext("2d");
+
+        let dts = {
+          // labels: countries.map(country => country.properties.name),
+          // datasets: [{
+          //   outline: countries,
+          //   label: 'Countries',
+          //   data: countries.map((d) => Object.assign(d, {value: Math.round(Math.random() * 10)})),
+          //   borderWidth: 1
+          // }]
+          labels: bra.map(country => country.properties.name),
+          datasets: [{
+            outline: bra,
+            label: 'Brazil',
+            showOutline: true,
+            backgroundColor: 'steelblue',
+            data: bra.map((d) => ({feature: d, value: Math.random()})),
+            // borderWidth: 1,
+          }]
+        }
+
+        let configOptions = {
+          responsive: true,
+          showOutline: false,
+          showGraticule: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+          },
+          scales: {
+            projection: {
+              axis: 'x',
+              projection: 'equalEarth', 
+            },
+            size: {
+              axis: 'x',
+              size: [1, 20],
+            },
+          }
+        };
+
+        new Chart(ctx, {
+          type: 'bubbleMap',
+          // type: 'choropleth',
+          data: dts,
+          options: configOptions,
+        });
+      })
+    </script>
+  </head>
+</html> 
