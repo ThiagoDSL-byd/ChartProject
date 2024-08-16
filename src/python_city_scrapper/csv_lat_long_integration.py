@@ -21,20 +21,22 @@ def add_lat_long_to_csv(json_data, csv_path, output_path):
         for item in json_data
     }
     
-    # Add new columns for latitude and longitude, initialized with NaN
-    df["Latitude"] = None
-    df["Longitude"] = None
-    
+    # Prepare a list to hold the rows of the new DataFrame
+    rows = []
+
     # Match cities and add latitude and longitude
     for index, row in df.iterrows():
         city_name = row["Município"].strip().lower()
         if city_name in city_coordinates:
-            df.at[index, "Latitude"] = city_coordinates[city_name][0]
-            df.at[index, "Longitude"] = city_coordinates[city_name][1]
+            latitude, longitude = city_coordinates[city_name]
+            rows.append({"City": row["Município"], "Latitude": latitude, "Longitude": longitude})
     
-    # Save the updated DataFrame to a new CSV file
-    df.to_csv(output_path, sep=';', index=False, encoding='utf-8')
-
+    # Create a new DataFrame from the collected rows
+    result_df = pd.DataFrame(rows, columns=["City", "Latitude", "Longitude"])
+    
+    # Save the result DataFrame to a new CSV file
+    result_df.to_csv(output_path, sep=';', index=False, encoding='utf-8')
+    
 if __name__ == "__main__":
     # JSON URL and paths to the input/output CSV files
     json_url = "https://raw.githubusercontent.com/kelvins/municipios-brasileiros/main/json/municipios.json"
