@@ -35,7 +35,7 @@ def add_lat_long_to_csv(json_data, csv_path, output_path):
     result_df = pd.DataFrame(rows, columns=["City", "Latitude", "Longitude"])
     
     # Save the result DataFrame to a new CSV file
-    result_df.to_csv(output_path, sep=';', index=False, encoding='utf-8')
+    result_df.to_csv(output_path, sep=',', index=False, encoding='utf-8')
     
 if __name__ == "__main__":
     # JSON URL and paths to the input/output CSV files

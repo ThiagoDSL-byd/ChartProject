@@ -1,81 +1,81 @@
-City;Latitude;Longitude
-São Paulo;-23.5329;-46.6395
-Rio de Janeiro;-22.9129;-43.2003
-Brasília;-15.7795;-47.9297
-Salvador;-12.9718;-38.5011
-Fortaleza;-3.71664;-38.5423
-Belo Horizonte;-19.9102;-43.9266
-Manaus;-3.11866;-60.0212
-Curitiba;-25.4195;-49.2646
-Recife;-8.04666;-34.8771
-Goiânia;-16.6864;-49.2643
-Belém;-9.57047;-36.4904
-Porto Alegre;-30.0318;-51.2065
-Guarulhos;-23.4538;-46.5333
-Campinas;-22.9053;-47.0659
-São Luís;-2.53874;-44.2825
-São Gonçalo;-22.8268;-43.0634
-Maceió;-9.66599;-35.735
-Duque de Caxias;-22.7858;-43.3049
-Campo Grande;-20.4486;-54.6295
-Natal;-5.79357;-35.1986
-Teresina;-5.09194;-42.8034
-São Bernardo do Campo;-23.6914;-46.5646
-João Pessoa;-7.11509;-34.8641
-Nova Iguaçu;-22.7556;-43.4603
-São José dos Campos;-23.1896;-45.8841
-Santo André;-7.22016;-36.6213
-Ribeirão Preto;-21.1699;-47.8099
-Jaboatão dos Guararapes;-8.11298;-35.015
-Uberlândia;-18.9141;-48.2749
-Osasco;-23.5324;-46.7916
-Sorocaba;-23.4969;-47.4451
-Contagem;-19.9321;-44.0539
-Aracaju;-10.9091;-37.0677
-Feira de Santana;-12.2664;-38.9663
-Cuiabá;-15.601;-56.0974
-Joinville;-26.3045;-48.8487
-Aparecida de Goiânia;-16.8198;-49.2469
-Londrina;-23.304;-51.1691
-Juiz de Fora;-21.7595;-43.3398
-Porto Velho;-8.76077;-63.8999
-Ananindeua;-1.36391;-48.3743
-Serra;-20.121;-40.3074
-Caxias do Sul;-29.1629;-51.1792
-Macapá;0.034934;-51.0694
-Niterói;-22.8832;-43.1034
-Florianópolis;-27.5945;-48.5477
-Belford Roxo;-22.764;-43.3992
-Campos dos Goytacazes;-21.7622;-41.3181
-Vila Velha;-20.3417;-40.2875
-Mauá;-23.6677;-46.4613
-São João de Meriti;-22.8058;-43.3729
-São José do Rio Preto;-20.8113;-49.3758
-Mogi das Cruzes;-23.5208;-46.1854
-Betim;-19.9668;-44.2008
-Boa Vista;-7.26365;-36.2357
-Maringá;-23.4205;-51.9333
-Santos;-23.9535;-46.335
-Diadema;-23.6813;-46.6205
-Jundiaí;-23.1852;-46.8974
-Rio Branco;-9.97499;-67.8243
-Montes Claros;-16.7282;-43.8578
-Campina Grande;-7.22196;-35.8731
-Piracicaba;-22.7338;-47.6476
-Carapicuíba;-23.5235;-46.8407
-Anápolis;-16.3281;-48.953
-Olinda;-8.01017;-34.8545
-Cariacica;-20.2632;-40.4165
-Bauru;-22.3246;-49.0871
-Itaquaquecetuba;-23.4835;-46.3457
-São Vicente;-6.21893;-36.6827
-Vitória;-20.3155;-40.3128
-Caruaru;-8.28455;-35.9699
-Caucaia;-3.72797;-38.6619
-Blumenau;-26.9155;-49.0709
-Petrolina;-9.38866;-40.5027
-Ponta Grossa;-25.0916;-50.1668
-Franca;-20.5352;-47.4039
-Canoas;-29.9128;-51.1857
-Pelotas;-31.7649;-52.3371
-Vitória da Conquista;-14.8615;-40.8442
+City,Latitude,Longitude
+São Paulo,-23.5329,-46.6395
+Rio de Janeiro,-22.9129,-43.2003
+Brasília,-15.7795,-47.9297
+Salvador,-12.9718,-38.5011
+Fortaleza,-3.71664,-38.5423
+Belo Horizonte,-19.9102,-43.9266
+Manaus,-3.11866,-60.0212
+Curitiba,-25.4195,-49.2646
+Recife,-8.04666,-34.8771
+Goiânia,-16.6864,-49.2643
+Belém,-9.57047,-36.4904
+Porto Alegre,-30.0318,-51.2065
+Guarulhos,-23.4538,-46.5333
+Campinas,-22.9053,-47.0659
+São Luís,-2.53874,-44.2825
+São Gonçalo,-22.8268,-43.0634
+Maceió,-9.66599,-35.735
+Duque de Caxias,-22.7858,-43.3049
+Campo Grande,-20.4486,-54.6295
+Natal,-5.79357,-35.1986
+Teresina,-5.09194,-42.8034
+São Bernardo do Campo,-23.6914,-46.5646
+João Pessoa,-7.11509,-34.8641
+Nova Iguaçu,-22.7556,-43.4603
+São José dos Campos,-23.1896,-45.8841
+Santo André,-7.22016,-36.6213
+Ribeirão Preto,-21.1699,-47.8099
+Jaboatão dos Guararapes,-8.11298,-35.015
+Uberlândia,-18.9141,-48.2749
+Osasco,-23.5324,-46.7916
+Sorocaba,-23.4969,-47.4451
+Contagem,-19.9321,-44.0539
+Aracaju,-10.9091,-37.0677
+Feira de Santana,-12.2664,-38.9663
+Cuiabá,-15.601,-56.0974
+Joinville,-26.3045,-48.8487
+Aparecida de Goiânia,-16.8198,-49.2469
+Londrina,-23.304,-51.1691
+Juiz de Fora,-21.7595,-43.3398
+Porto Velho,-8.76077,-63.8999
+Ananindeua,-1.36391,-48.3743
+Serra,-20.121,-40.3074
+Caxias do Sul,-29.1629,-51.1792
+Macapá,0.034934,-51.0694
+Niterói,-22.8832,-43.1034
+Florianópolis,-27.5945,-48.5477
+Belford Roxo,-22.764,-43.3992
+Campos dos Goytacazes,-21.7622,-41.3181
+Vila Velha,-20.3417,-40.2875
+Mauá,-23.6677,-46.4613
+São João de Meriti,-22.8058,-43.3729
+São José do Rio Preto,-20.8113,-49.3758
+Mogi das Cruzes,-23.5208,-46.1854
+Betim,-19.9668,-44.2008
+Boa Vista,-7.26365,-36.2357
+Maringá,-23.4205,-51.9333
+Santos,-23.9535,-46.335
+Diadema,-23.6813,-46.6205
+Jundiaí,-23.1852,-46.8974
+Rio Branco,-9.97499,-67.8243
+Montes Claros,-16.7282,-43.8578
+Campina Grande,-7.22196,-35.8731
+Piracicaba,-22.7338,-47.6476
+Carapicuíba,-23.5235,-46.8407
+Anápolis,-16.3281,-48.953
+Olinda,-8.01017,-34.8545
+Cariacica,-20.2632,-40.4165
+Bauru,-22.3246,-49.0871
+Itaquaquecetuba,-23.4835,-46.3457
+São Vicente,-6.21893,-36.6827
+Vitória,-20.3155,-40.3128
+Caruaru,-8.28455,-35.9699
+Caucaia,-3.72797,-38.6619
+Blumenau,-26.9155,-49.0709
+Petrolina,-9.38866,-40.5027
+Ponta Grossa,-25.0916,-50.1668
+Franca,-20.5352,-47.4039
+Canoas,-29.9128,-51.1857
+Pelotas,-31.7649,-52.3371
+Vitória da Conquista,-14.8615,-40.8442
