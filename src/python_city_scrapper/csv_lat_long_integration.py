@@ -1,11 +1,15 @@
 import requests
 import pandas as pd
+import json
 
 def fetch_json_data(url):
     # Fetch JSON data from the URL
     response = requests.get(url)
     response.raise_for_status()  # Raise an error for bad responses
-    return response.json()
+
+    json_data = response.content.decode('utf-8-sig')
+
+    return json.loads(json_data)
 
 def add_lat_long_to_csv(json_data, csv_path, output_path):
     # Read the CSV file into a pandas DataFrame
@@ -23,7 +27,7 @@ def add_lat_long_to_csv(json_data, csv_path, output_path):
     
     # Match cities and add latitude and longitude
     for index, row in df.iterrows():
-        city_name = row["City"].strip().lower()
+        city_name = row["Município"].strip().lower()
         if city_name in city_coordinates:
             df.at[index, "Latitude"] = city_coordinates[city_name][0]
             df.at[index, "Longitude"] = city_coordinates[city_name][1]
